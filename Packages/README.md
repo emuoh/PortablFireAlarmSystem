@@ -1,1 +1,1 @@
-# com.emuoh.portablefirealarmsystem by daisuke
+# com.emuoh.portablefirealarmsystem by emuoh

@@ -2,18 +2,20 @@
   "name": "com.emuoh.portablefirealarmsystem",
   "displayName": "com.emuoh.portablefirealarmsystem",
   "version": "0.0.1",
-  "description": "Describe this Package",
-  "dependencies": {},
+  "description": "Portable FireAlarm System for VRChat Gimmick",
   "gitDependencies": {},
   "vpmDependencies": {
-    "com.vrchat.avatars": "3.8.2"
+    "com.vrchat.avatars": "3.8.2",
+    "nadena.dev.modular-avatar": ">=1.13.0",
+    "com.anatawa12.avatar-optimizer": ">=1.8.12",
+    "net.rs64.tex-trans-tool": ">=0.10.10"
   },
   "author": {
     "name": "emuoh",
-    "email": "utimizu.square@gmail.com",
-    "url": "http://x.com/emuoh3"
+    "url": "https://x.com/emuoh3"
   },
   "legacyFolders": {},
   "legacyFiles": {},
-  "localPath": "C:\\Users\\daisuke\\Documents\\VRChat\\Throne\\Packages\\com.emuoh.portablefirealarmsystem"
+  "Unity": "2022.3",
+  "unity": "2022.3"
 }

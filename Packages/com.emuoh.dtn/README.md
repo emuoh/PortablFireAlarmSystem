@@ -1,1 +1,1 @@
-# com.emuoh.dtn by daisuke
+# com.emuoh.dtn by emuoh

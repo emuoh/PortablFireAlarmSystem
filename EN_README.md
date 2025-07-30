@@ -37,7 +37,7 @@ If you purchased or downloaded it from Booth, you can install and update it via 
 https://emuoh.github.io/vpm-repos/vpm.json
 ```
 
-3. Select Manage Project from the VCC startup screen for the project you want to install
+3. Select Manage Project from the VCC startup screen for the project you want to install.
 
 4. Click the "Add Package (VPM)" button.  
 
@@ -60,9 +60,9 @@ https://emuoh.github.io/vpm-repos/vpm.json
 
 4. Select the package you want to install and click "Add"
 
-5. Select "Manage" for the project you want to install from the ALCOM startup screen
+5. Select "Manage" for the project you want to install from the ALCOM startup screen.
 
-6. Search for "emuoh" in the "package management" search bar and check the package you want to install
+6. Search for "emuoh" in the "package management" search bar and check the package you want to install.
 
 7. Select "Install Selected" to install the package.
 
@@ -76,20 +76,7 @@ https://emuoh.github.io/vpm-repos/vpm.json
 
 ## 📜 License (VN3 License)
 
-This package is licensed under the [VN3 License](https://vn3.dev/).
-
-### User Rights
-
-- Modification, redistribution, and commercial use are allowed.
-- Credit attribution is not required.
-
-### Prohibited Acts
-
-- Use violating laws or public order.
-- False claims of authorship or misrepresentation.
-- Infringing on the rights of others.
-
-See [LICENSE.md](./LICENSE.md) for details.
+See [LICENSE.md](https://github.com/emuoh/vpm-repos/blob/main/LICENSE.md) for details.
 
 ---
 

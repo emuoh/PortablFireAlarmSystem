@@ -51,7 +51,7 @@ https://com.enuoh.portablefirealarmsystem/vpm.json
 ---
 ## 🎮 操作方法
 [このリンク](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Docs/Manual_PortableFireAlertSystem.md)から参照してください。
-
+[English Manual Here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Docs/EN_Manual_PortableFireAlertSystem.md)
 
 ## 🔁 アップデート
 

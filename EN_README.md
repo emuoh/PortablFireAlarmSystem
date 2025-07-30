@@ -24,37 +24,48 @@ If you purchased or downloaded it from Booth, you can install and update it via 
 
 ---
 
-## 📦 Installation
 
-### ✅ Method 1: Use VCC (VRChat Creator Companion)
+## 🧩 Installation Instructions
 
-1. Open VCC and select your project.
-2. Click "Add Package (VPM)".
-3. Click "+ Add Repository" and enter the following URL:
+### ✅ Method 1: Using VCC (VRChat Creator Companion)
+
+1. Open VCC and select Settings
+
+2. Select "Packages", then Click "+ Add Repository" and add the following URL:
 
 ```
-https://com.enuoh.portablefirealarmsystem/vpm.json
+https://emuoh.github.io/vpm-repos/vpm.json
 ```
 
-4. Search for `ExampleGimmick` from the package list and click "Add".
+3. Select Manage Project from the VCC startup screen for the project you want to install
+
+4. Click the "Add Package (VPM)" button.  
+
+5.  Search for emuoh in "Selected Repos", and select "(+) (Add Package)" to the right of the package you want to install, and the package will be installed.
+
 
 ---
 
 ### ✅ Method 2: Use ALCOM
 
-1. Open the [official ALCOM site](https://vpm.alcom.dev/).
-2. Search for "ExampleGimmick" in the search box.
-3. Click "Install in VCC" and it will be added automatically in VCC.
+1. Open ALCOM and select "Package&Templates"
+   
+2. Click "Add Repository" from the menu
+   
+3. Paste the following URL and confirm:
 
-> ALCOM is a web service for browsing and adding VPM repositories easily.
+```
+https://emuoh.github.io/vpm-repos/vpm.json
+```
 
----
+4. Select the package you want to install and click "Add"
 
-## 🎮 How to Operate
+5. Select "Manage" for the project you want to install from the ALCOM startup screen
 
-Please refer to [this link](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Docs/Manual_PortableFireAlertSystem.md).
+6. Search for "emuoh" in the "package management" search bar and check the package you want to install
 
----
+7. Select "Install Selected" to install the package.
+
 
 ## 🔁 Updates
 

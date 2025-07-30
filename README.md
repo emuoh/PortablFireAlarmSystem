@@ -1,76 +1,94 @@
-# VPM Package Template
 
-Starter for making Packages, including automation for building and publishing them.
 
-Once you're all set up, you'll be able to push changes to this repository and have .zip and .unitypackage versions automatically generated, and a listing made which works in the VPM for delivering updates for this package. If you want to make a listing with a variety of packages, check out our [template-package-listing](https://github.com/vrchat-community/template-package-listing) repo.
+# VRChatギミックパッケージ - 携帯型火災報知器
 
-## ▶ Getting Started
+VRChatで使えるギミック「携帯型火災報知器」のVPMパッケージです。
 
-* Press [![Use This Template](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)](https://github.com/vrchat-community/template-package/generate)
-to start a new GitHub project based on this template.
-  * Choose a fitting repository name and description.
-  * Set the visibility to 'Public'. You can also choose 'Private' and change it later.
-  * You don't need to select 'Include all branches.'
-* Clone this repository locally using Git.
-  * If you're unfamiliar with Git and GitHub, [visit GitHub's documentation](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources) to learn more.
-* Add the folder to Unity Hub and open it as a Unity Project.
-* After opening the project, wait while the VPM resolver is downloaded and added to your project.
-  * This gives you access to the VPM Package Maker and Package Resolver tools.
+このギミックは、首にかけて携帯できる火災報知器です。ボタンなどの各種ギミック・エフェクトを搭載しております。
+Boothで購入・ダウンロードされた方は、このリポジトリを通じてVPM経由の導入・更新が可能です。
 
-## 🚇 Migrating Assets Package
-Full details at [Converting Assets to a VPM Package](https://vcc.docs.vrchat.com/guides/convert-unitypackage)
+---
 
-## ✏️ Working on Your Package
+## 🔧 概要
 
-* Delete the "Packages/com.vrchat.demo-template" directory or reuse it for your own package.
-  * If you reuse the package, don't forget to rename it and add generated meta files to your repository!
-* Update the `.gitignore` file in the "Packages" directory to include your package.
-  * For example, change `!com.vrchat.demo-template` to `!com.username.package-name`.
-  * `.gitignore` files normally *exclude* the contents of your "Packages" directory. This `.gitignore` in this template show how to *include* the demo package. You can easily change this out for your own package name.
-* Open the Unity project and work on your package's files in your favorite code editor.
-* When you're ready, commit and push your changes.
-* Once you've set up the automation as described below, you can easily publish new versions.
+- 首にかけて携帯できる火災報知器です。
+- 何かが炎上している・しかかっている時にすかさず押すことで回りに周知し、延焼を防ぐことが可能かも知れません。
+- 本体警報ボタンを押すと作動して音と吹き出し文字が出せます(Quest版は吹き出し文字のみ)。
+- 停止ボタンのカバーを開けて警報停止ボタンを押すと停止します。
+- 作動中はボタン内部のLEDも点滅します。
+- デスクトップの方でも使用できるようメニューから各種オンオフ、サイズ調整を含めた全ての操作が可能です。
+- PhysBone使用で手に持ったり、他の人にも押してもらえたり、あなたの首にやさしくフィットできます(形状の特性上、フィットしきれない場合もあります)。
+- 軽量設計ですので、アバターへの負荷も小さくしております。
+- PC 版と Quest(Pico or スマホ、以下 Quest) 版が入っております。
+- PC版は音が出せますが、誤解のないよう公序良俗に反しない範囲で適切にご使用ください(使用に関しての一切の責任は負えませんのでご了承ください)。
 
-## 🤖 Setting up the Automation
+---
 
-Create a repository variable with the name and value described below.
-For details on how to create repository variables, see [Creating Configuration Variables for a Repository](https://docs.github.com/en/actions/learn-github-actions/variables#creating-configuration-variables-for-a-repository).
-Make sure you are creating a **repository variable**, and not a **repository secret**.
+## 📦 インストール方法
 
-* `PACKAGE_NAME`: the name of your package, like `com.vrchat.demo-template`.
+### ✅ 方法①：VCC（VRChat Creator Companion）を使う
 
-Finally, go to the "Settings" page for your repo, then choose "Pages", and look for the heading "Build and deployment". Change the "Source" dropdown from "Deploy from a branch" to "GitHub Actions".
+1. VCC を開き、プロジェクトを選択
+2. 「Add Package (VPM)」をクリック
+3. 上部の「+ Add Repository」から以下のURLを追加：
 
-That's it!
-Some other notes:
-* We highly recommend you keep the existing folder structure of this template.
-  * The root of the project should be a Unity project.
-  * Your packages should be in the "Packages" directory.
-  * If you deviate from this folder structure, you'll need to update the paths that assume your package is in the "Packages" directory on lines 24, 38, 41 and 57.
-* If you want to store and generate your web files in a folder other than "Website" in the root, you can change the `listPublicDirectory` item [here in build-listing.yml](.github/workflows/build-listing.yml#L17).
+```
+https://com.enuoh.portablefirealarmsystem/vpm.json
+```
 
-## 🎉 Publishing a Release
+4. パッケージ一覧から `ExampleGimmick` を検索して「Add」ボタンを押してください
 
-You can make a release by running the [Build Release](.github/workflows/release.yml) action. The version specified in your `package.json` file will be used to define the version of the release.
+---
 
-## 📃 Rebuilding the Listing
+### ✅ 方法②：ALCOM を使う
 
-Whenever you make a change to a release - manually publishing it, or manually creating, editing or deleting a release, the [Build Repo Listing](.github/workflows/build-listing.yml) action will make a new index of all the releases available, and publish them as a website hosted fore free on [GitHub Pages](https://pages.github.com/). This listing can be used by the VPM to keep your package up to date, and the generated index page can serve as a simple landing page with info for your package. The URL for your package will be in the format `https://username.github.io/repo-name`.
+1. [ALCOM公式サイト](https://vpm.alcom.dev/) を開く
+2. 検索ボックスで「ExampleGimmick」と入力
+3. パッケージ詳細ページで「Install in VCC」を押すと、VCCが自動的に起動して追加されます
 
-## 🏠 Customizing the Landing Page (Optional)
+> ALCOMはVPMリポジトリを簡単にブラウズ・追加できるウェブサービスです
 
-The action which rebuilds the listing also publishes a landing page. The source for this page is in `Website/index.html`. The automation system uses [Scriban](https://github.com/scriban/scriban) to fill in the objects like `{{ this }}` with information from the latest release's manifest, so it will stay up-to-date with the name, id and description that you provide there. You are welcome to modify this page however you want - just use the existing `{{ template.objects }}` to fill in that info wherever you like. The entire contents of your "Website" folder are published to your GitHub Page each time.
+---
 
-## 💻 Technical Stuff
+## 🔁 アップデート
 
-You are welcome to make your own changes to the automation process to make it fit your needs, and you can create Pull Requests if you have some changes you think we should adopt. Here's some more info on the included automation:
+- VCCの「Updates」タブからワンクリックで更新可能
+- ALCOM経由で追加した場合も同様に自動検出されます
 
-### Build Release Action
-[release.yml](/.github/workflows/release.yml)
+---
 
-This is a composite action combining a variety of existing GitHub Actions and some shell commands to create both a .zip of your Package and a .unitypackage. It creates a release which is named for the `version` in the `package.json` file found in your target Package, and publishes the zip, the unitypackage and the package.json file to this release.
+## 📜 ライセンス（VN3ライセンス）
 
-### Build Repo Listing
-[build-listing.yml](.github/workflows/build-listing.yml)
+このパッケージの利用には [VN3 ライセンス](https://vn3.dev/) が適用されます。
 
-This is a composite action which builds a vpm-compatible [Repo Listing](https://vcc.docs.vrchat.com/vpm/repos) based on the releases you've created. In order to find all your releases and combine them into a listing, it checks out [another repository](https://github.com/vrchat-community/package-list-action) which has a [Nuke](https://nuke.build/) project which includes the VPM core lib to have access to its types and methods. This project will be expanded to include more functionality in the future - for now, the action just calls its `BuildRepoListing` target.
+### 利用者の権利
+- 改変・再配布・商用利用が可能
+- クレジット表記が不要
+
+### 禁止事項
+- 法令違反、公序良俗に反する利用
+- 虚偽の帰属表示や、自作発言
+- 他者の権利を侵害する行為
+
+詳しくは [LICENSE.md](./LICENSE.md) を参照してください。
+
+---
+
+## 👤 作者・連絡先
+
+- 制作：emuoh([https://emuoh3.booth.pm/](https://emuoh3.booth.pm/))
+- GitHub: [emuoh/PortablFireAlarmSystem: PortablFireAlarmSystem For VRChat Gimmick](https://github.com/emuoh/PortablFireAlarmSystem)
+- X: emuoh3@x.com
+
+---
+
+## 🧷 クレジット
+
+- Unity 2022.3
+- VRCSDK3
+- 使用素材
+ 効果音提供　オトロジック(https://otologic.jp)
+VOICEVOX:四国めたん
+VOICEVOX:ずんだもん
+VOICEVOX:青山龍星
+

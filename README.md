@@ -4,7 +4,7 @@
 
 VRChatで使えるギミック「携帯型火災報知器」のVPMパッケージです。
 
-このギミックは、首にかけて携帯できる火災報知器です。ボタンなどの各種ギミック・エフェクトを搭載しております。
+このギミックは、首にかけて携帯できる火災報知器です。ボタンなどの各種ギミック・エフェクトを搭載しています。
 Boothで購入・ダウンロードされた方は、このリポジトリを通じてVPM経由の導入・更新が可能です。
 
 ---
@@ -49,6 +49,9 @@ https://com.enuoh.portablefirealarmsystem/vpm.json
 > ALCOMはVPMリポジトリを簡単にブラウズ・追加できるウェブサービスです
 
 ---
+## 🎮 操作方法
+[このリンク](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Docs/Manual_PortableFireAlertSystem.md)から参照してください。
+
 
 ## 🔁 アップデート
 

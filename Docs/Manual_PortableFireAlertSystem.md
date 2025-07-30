@@ -1,115 +1,97 @@
 
-# 🔥 Portable Fire Alert System - 使用説明書
 
-首にかけて携帯できる、軽量な火災報知器ギミックです。  
-VRChatアバターに組み込むことができ、PCとQuestの両方に対応しており、PhysBoneにも対応しています。
+# VRChatギミックパッケージ - 携帯型火災報知器
 
----
+VRChatで使えるギミック「携帯型火災報知器」のVPMパッケージです。
 
-## 📦 同梱内容
-
-| ファイル名 | 説明 |
-|------------|------|
-| `PortableFireAlartSystem.zip` | 一式圧縮ファイルです。 |
-| `PortableFireAlartSystem.unitypackage` | 本体のUnityパッケージです。 |
-| `PortableFireAlartSystem.prefab` | PC向けPrefab（音声あり）です。 |
-| `PortableFireAlartSystem_Quest.prefab` | Quest向けPrefab（音声なし）です。 |
-| `readme.txt` | この説明書です。 |
+このギミックは、首にかけて携帯できる火災報知器です。ボタンなどの各種ギミック・エフェクトを搭載しています。
+Boothで購入・ダウンロードされた方は、このリポジトリを通じてVPM経由の導入・更新が可能です。
 
 ---
 
-## 💡 概要
+## 🔧 概要
 
-- 音と吹き出し文字で警報を出します（PC）。吹き出し文字のみ（Quest）にも対応しています。
-- ボタンとカバーによる停止動作があります。
-- LED点滅、軽量構造で、PhysBoneによる自然な装着感があります。
-- メニュー操作と手動操作の2方式に対応しており、デスクトップ・VRの両方で利用可能です。
-
----
-
-## 🛠 対応環境
-
-- Unity：2022.3.22f1 を使用しています。
-- Shader：Standard Lite / Multiply（SDK標準）です。
-- 必須アセット：
-  - Modular Avatar v1.13.0 以上が必要です。
-  - AtlasTexture v1.8.12 以上が必要です。
+- 首にかけて携帯できる火災報知器です。
+- 何かが炎上している・しかかっている時にすかさず押すことで回りに周知し、延焼を防ぐことが可能かも知れません。
+- 本体警報ボタンを押すと作動して音と吹き出し文字が出せます(Quest版は吹き出し文字のみ)。
+- 停止ボタンのカバーを開けて警報停止ボタンを押すと停止します。
+- 作動中はボタン内部のLEDも点滅します。
+- デスクトップの方でも使用できるようメニューから各種オンオフ、サイズ調整を含めた全ての操作が可能です。
+- PhysBone使用で手に持ったり、他の人にも押してもらえたり、あなたの首にやさしくフィットできます(形状の特性上、フィットしきれない場合もあります)。
+- 軽量設計ですので、アバターへの負荷も小さくしております。
+- PC 版と Quest(Pico or スマホ、以下 Quest) 版が入っております。
+- PC版は音が出せますが、誤解のないよう公序良俗に反しない範囲で適切にご使用ください(使用に関しての一切の責任は負えませんのでご了承ください)。
 
 ---
 
-## 📐 スペック（PC/Quest）
+## 📦 インストール方法
 
-| 項目 | 値 |
-|------|----|
-| Polygon Count | 2284 |
-| Skinned Meshes | 1 |
-| Materials | 2 |
-| Textures | 2 |
-| Bones | 8 |
-| PhysBones | 1 |
-| Physbone Colliders | 1 |
-| Contact | 2 |
-| Audio Source | 2（※PCのみ） |
+### ✅ 方法①：VCC（VRChat Creator Companion）を使う
 
----
+1. VCC を開き、プロジェクトを選択
+2. 「Add Package (VPM)」をクリック
+3. 上部の「+ Add Repository」から以下のURLを追加：
 
-## 🧩 導入方法
+```
+https://com.enuoh.portablefirealarmsystem/vpm.json
+```
 
-1. `.unitypackage` を `Assets` フォルダへドラッグ＆ドロップしてください。
-2. `Prefab` をアバターの直下に配置してください（Questは `_Quest` を使用します）。
-3. `MA_BoneProxy_Neck` の位置とサイズを首に合うよう調整してください。
-4. `PB_COL_FAS_Belt` の位置も身体に沿わせるように調整してください。
+4. パッケージ一覧から `ExampleGimmick` を検索して「Add」ボタンを押してください
 
 ---
 
-## 🧪 Quest向け注意点
+### ✅ 方法②：ALCOM を使う
 
-- Multiply Shader が透明にならない場合は、透過なしマテリアルに変更してください。
-- PhysBoneが多すぎるとアップロードできない場合がありますので、ご注意ください。
+1. [ALCOM公式サイト](https://vpm.alcom.dev/) を開く
+2. 検索ボックスで「ExampleGimmick」と入力
+3. パッケージ詳細ページで「Install in VCC」を押すと、VCCが自動的に起動して追加されます
+
+> ALCOMはVPMリポジトリを簡単にブラウズ・追加できるウェブサービスです
 
 ---
-
 ## 🎮 操作方法
+[このリンク](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Docs/Manual_PortableFireAlertSystem.md)から参照してください。
 
-### メニュー操作（PC/VR）
 
-| ボタン名 | 機能 |
-|----------|------|
-| On | 警報器を表示します。 |
-| Button On | 非常ボタンのON/OFFを切り替えます。 |
-| Alarm Stop | 停止ボタンで警報を停止します。 |
-| Cover Open | 停止ボタンカバーの開閉を行います。 |
-| Onomatopeia On | 吹き出し文字のON/OFFを切り替えます。 |
-| Sound On | 警報音のON/OFFを切り替えます（PCのみ）。 |
-| Voice On | 音声のON/OFFを切り替えます（デフォルトはOFFです）。 |
-| Body Size | 本体のサイズを調整します。 |
-| Belt Spread | 首との開きを調整します。 |
-| Belt Width | ベルトの幅を調整します。 |
+## 🔁 アップデート
 
-### 手動操作（VR）
-
-1. 人差し指で非常ボタンを押すと、警報がONになります。
-2. カバーに触れると、開きます。
-3. 停止ボタンを押すと、警報がOFFになります。
-4. 再度カバーを触ると、閉じます。
+- VCCの「Updates」タブからワンクリックで更新可能
+- ALCOM経由で追加した場合も同様に自動検出されます
 
 ---
 
-## 🎁 おまけ音声
+## 📜 ライセンス（VN3ライセンス）
 
-- フォルダ内 `Sound/Voice` に複数の音声バリエーションが含まれています。
-- `FAS_Sound` や `FAS_Voice` の `AudioClip` を差し替えて使用することができます。
+このパッケージの利用には [VN3 ライセンス](https://vn3.dev/) が適用されます。
+
+### 利用者の権利
+- 改変・再配布・商用利用が可能
+- クレジット表記が不要
+
+### 禁止事項
+- 法令違反、公序良俗に反する利用
+- 虚偽の帰属表示や、自作発言
+- 他者の権利を侵害する行為
+
+詳しくは [LICENSE.md](./LICENSE.md) を参照してください。
 
 ---
 
-## 🔈 使用素材
+## 👤 作者・連絡先
 
-- 効果音： [オトロジック](https://otologic.jp) 様
-- 音声合成： VOICEVOX（四国めたん、ずんだもん、青山龍星）様を使用しています。
+- 制作：emuoh([https://emuoh3.booth.pm/](https://emuoh3.booth.pm/))
+- GitHub: [emuoh/PortablFireAlarmSystem: PortablFireAlarmSystem For VRChat Gimmick](https://github.com/emuoh/PortablFireAlarmSystem)
+- X: emuoh3@x.com
 
 ---
 
-## 📜 ライセンス
+## 🧷 クレジット
 
-このギミックは [VN3ライセンス](https://vn3.dev) に準拠しています。  
-詳しくは `LICENSE.md` をご確認ください。
+- Unity 2022.3
+- VRCSDK3
+- 使用素材
+ 効果音提供　オトロジック(https://otologic.jp)
+VOICEVOX:四国めたん
+VOICEVOX:ずんだもん
+VOICEVOX:青山龍星
+

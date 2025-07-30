@@ -1,4 +1,3 @@
-
 # VRChatギミックパッケージ - 携帯型火災報知器
 
 [English Ovewview Here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/EN_README.md)
@@ -26,62 +25,71 @@ Boothで購入・ダウンロードされた方は、このリポジトリを通
 
 ---
 
-## 📦 インストール方法
+## 🧩 インストール方法  
 
-### ✅ 方法①：VCC（VRChat Creator Companion）を使う
+### ✅ 方法①：VCC（VRChat Creator Companion）を使用する  
 
-1. VCC を開き、プロジェクトを選択
-2. 「Add Package (VPM)」をクリック
-3. 上部の「+ Add Repository」から以下のURLを追加：
+1. VCCを開き、Settingsを選択
+
+2. Packagesを選択し「+ Add Repository」から以下のURLを追加：  
 
 ```
-https://com.enuoh.portablefirealarmsystem/vpm.json
+https://emuoh.github.io/portablfirealarmsystem/vpm.json
 ```
 
-4. パッケージ一覧から `ExampleGimmick` を検索して「Add」ボタンを押してください
+3. VCCの起動時の画面からインストールしたいプロジェクトのManage Projectを選択
+
+4. 「Add Package (VPM)」ボタンをクリック  
+
+5. 「Selected Repos」からemuohで検索、インストールしたいパッケージ右側にある「(+) (Add Package)」を選択すると、パッケージがインストールされる
+
 
 ---
 
-### ✅ 方法②：ALCOM を使う
+### ✅ 方法②：ALCOM を使用する  
 
-1. [ALCOM公式サイト](https://vpm.alcom.dev/) を開く
-2. 検索ボックスで「ExampleGimmick」と入力
-3. パッケージ詳細ページで「Install in VCC」を押すと、VCCが自動的に起動して追加されます
+1. ALCOM開き、「パッケージ＆テンプレート」を選択
+   
+2. 「リポジトリを追加」を選択
+   
+3. 以下のURLを追加:
 
-> ALCOMはVPMリポジトリを簡単にブラウズ・追加できるウェブサービスです
+```
+https://emuoh.github.io/vpm-repos/vpm.json
+```
 
----
+4. インストールしたいパッケージを選択して「Add」をクリック 
+
+5. ALCOMの起動時の画面からインストールしたいプロジェクトの「管理」を選択する
+
+6. 「パッケージ管理」の検索バーから"emuoh"で検索してインストールしたいパッケージにチェックを入れる
+
+7. 「選択した物をインストール」を選択すると、パッケージがインストールされる
+
+
 ## 🎮 操作方法
-[このリンク](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Docs/Manual_PortableFireAlertSystem.md)から参照してください。
-[English Manual Here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Docs/EN_Manual_PortableFireAlertSystem.md)
+[このリンク](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/README.md)から参照してください。
+
+
+[English Manual Here.](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/EN_README.md)
+
 
 ## 🔁 アップデート
 
-- VCCの「Updates」タブからワンクリックで更新可能
+- VCCの「Updates」タブからワンクリックで更新可能です
 - ALCOM経由で追加した場合も同様に自動検出されます
 
 ---
 
 ## 📜 ライセンス（VN3ライセンス）
 
-このパッケージの利用には [VN3 ライセンス](https://vn3.dev/) が適用されます。
-
-### 利用者の権利
-- 改変・再配布・商用利用が可能
-- クレジット表記が不要
-
-### 禁止事項
-- 法令違反、公序良俗に反する利用
-- 虚偽の帰属表示や、自作発言
-- 他者の権利を侵害する行為
-
-詳しくは [LICENSE.md](./LICENSE.md) を参照してください。
+ [LICENSE.md](https://github.com/emuoh/vpm-repos/blob/main/LICENSE.md) を参照してください。
 
 ---
 
 ## 👤 作者・連絡先
 
-- 制作：emuoh([https://emuoh3.booth.pm/](https://emuoh3.booth.pm/))
+- 制作：emuoh(えむお～)([https://emuoh3.booth.pm/](https://emuoh3.booth.pm/))
 - GitHub: [emuoh/PortablFireAlarmSystem: PortablFireAlarmSystem For VRChat Gimmick](https://github.com/emuoh/PortablFireAlarmSystem)
 - X: emuoh3@x.com
 

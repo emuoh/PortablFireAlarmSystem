@@ -117,6 +117,8 @@ Modular Avatarを使用していますので首のボーンに自動的に配置
 ### ラジアルメニュー操作（PC/VR）
 
 ![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/RadialMenu.png)
+![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/RadialMenu_2.png)
+
 | ボタン名 | 機能 |
 |----------|------|
 | On | 報知器本体を表示します。 |

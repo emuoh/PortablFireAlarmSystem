@@ -1,3 +1,4 @@
+
 # VRChatギミックパッケージ - 携帯型火災報知器
 
 [English README Here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/EN_README.md)
@@ -19,7 +20,7 @@ VRChatで使えるギミック「携帯型火災報知器」のVPMパッケー�
 - PhysBone使用で手に持ったり、他の人にも押してもらえたり、あなたの首にやさしくフィットできます(形状の特性上、フィットしきれない場合もあります)。
 - 軽量設計ですので、アバターへの負荷も小さくしております。
 - PC 版と Quest(Pico or スマホ、以下 Quest) 版が入っております。
-- PC版は音が出せますが、誤解のないよう公序良俗に反しない範囲で適切にご使用ください(使用に関しての一切の責任は負えませんのでご了承ください)。
+- PC版は音が出せますが、誤解が起きないよう公序良俗に反しない範囲で適切にご使用ください(使用に関しての一切の責任は負えませんのでご了承ください)。
 
 ---
 ## 📐 使用リソース (PC/Quest 共通)
@@ -60,12 +61,16 @@ VRChatで使えるギミック「携帯型火災報知器」のVPMパッケー�
 
 ## 🛠 対応環境
 
-- Unity：2022.3.22f1。
+- Unity：2022.3.22f1
 - Shader：Standard Lite / Multiply（SDK標準）
 - 必須アセット：
-  - Modular Avatar v1.13.0 以上
-  - AtlasTexture v.0.10.10 以上
-  - Avatar Optimizer v1.8.12 以上
+  - [Modular Avatar v1.13.0 以上](https://modular-avatar.nadena.dev/ja/docs/intro)
+  - [AtlasTexture v.0.10.10 以上](https://ttt.rs64.net/)
+  - [Avatar Optimizer v1.8.12 以上](https://vpm.anatawa12.com/avatar-optimizer/ja/)
+リンクは各アセットの最新のVPNリポジトリによる導入サイトになります。
+可能な限り最新のバージョンを使用してください。
+バージョンが低い環境の場合は、正常に動作しないことがあります。
+
 ---
 
 ## 🧩 インストール方法  
@@ -74,8 +79,10 @@ VRChatで使えるギミック「携帯型火災報知器」のVPMパッケー�
 
  1. [このリンク](https://github.com/emuoh/vpm-repos/blob/main/README.md)のインストール方法からパッケージをインストールしてください。
  2.  /packages/com.emuoh.portablefirealarmsystem/Runtime にある
-PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab)  をHierarchyのアバター直下にドラッグアンドドロップしてください。
-[PortablFireAlarmSystem/Install_Picture/VPM_Package_Install.png at main · emuoh/PortablFireAlarmSystem](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/VPM_Package_Install.png)
+PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab)  を
+Hierarchyのアバター直下にドラッグアンドドロップしてください。
+![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/VPM_Package_Install.png)
+
 ### ・ダウンロードした.zipファイルからインストールする場合
 
 1. 解凍した.zipファイルの中のPortableFirealarmSystem.unitypackageファイルを
@@ -91,7 +98,7 @@ Import確認画面が出ますので、Importを選択してください。
 ## 🧩位置の調整方法
 Modular Avatarを使用していますので首のボーンに自動的に配置されますが、ズレがある場合は以下の方法で位置調整を行ってください。
 
-1. `MA_BoneProxy_Neck` を選択してベルトの位置を調整してください。
+1. `MA_BoneProxy_Neck` を選択後、矢印をドラッグしてベルトの位置を調整してください。
 ![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/Modify_Position.png)
 
 2. `PB_COL_FAS_Belt` はベルトが身体を貫通しないようにするコライダーです。この位置を1.と同様に操作して、身体に沿わせるように調整してください。
@@ -99,9 +106,9 @@ Modular Avatarを使用していますので首のボーンに自動的に配置
 
 ## 🧪 Quest向け注意点
 
-- Multiply Shader が透明にならない、もしくは表示に不具合のある場合は、以下の手順で透過なしのマテリアルに変更してください。
+- 吹き出し文字の表示に不具合のある場合は、以下の手順で透過なしのマテリアルに変更してください(透過が外れますので吹き出し文字の美観は損なわれます)。
  ![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/QUEST_Change_Shader.png)
-- 導入するアバターが既にPhysBoneリソースを多く使用している場合、アップロードできない場合がありますので、不要なボーン等を削除してください。
+- 導入するアバターが既にPhysBoneリソースを多く使用している場合はアップロードできない場合がありますので、不要なボーン等を削除してください。
 
 ---
 
@@ -145,7 +152,7 @@ Modular Avatarを使用していますので首のボーンに自動的に配置
 
 - ALCOMからはアップデートしたいプロジェクトの「管理」から「最新のバージョン」を選択することで更新可能です。
 
-- .zipファイルからインストールした場合は、ダウンロードしたサイト(Booth等)から最新版をダウンロードして再インストールしてください(詳細な手順はサイト上の説明もしくは.zipファイル内をご参照ください)。
+- .zipファイルからインストールした場合は、最新版の自動通知はされません。ダウンロードしたサイト(Booth等)から最新版をダウンロードして再インストールしてください(詳細な手順はサイト上の説明もしくは.zipファイル内をご参照ください)。
 
 ---
 
@@ -164,12 +171,12 @@ Modular Avatarを使用していますので首のボーンに自動的に配置
 
 ## 🧷 クレジット
 
-- Unity 2022.3
-- VRCSDK3
+- テスト時使用アバター: [マヌカ](https://booth.pm/ja/items/5058077) (https://booth.pm/ja/items/5058077)
+  
 
 ## 🔈 使用素材
 
-- 効果音： [オトロジック](https://otologic.jp) 様
+- 警報音： [オトロジック](https://otologic.jp) 様
 - 音声合成： VOICEVOX（四国めたん、ずんだもん、青山龍星）様を使用しています。
 
 ---

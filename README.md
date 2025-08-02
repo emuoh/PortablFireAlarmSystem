@@ -69,28 +69,33 @@ VRChatで使えるギミック「携帯型火災報知器」のVPMパッケー�
  1. [このリンク](https://github.com/emuoh/vpm-repos/blob/main/README.md)のインストール方法からパッケージをインストールしてください。
  2.  /packages/com.emuoh.portablefirealarmsystem/Runtime にある
 PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab)  をHierarchyのアバター直下にドラッグアンドドロップしてください。
+![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/VPM_Package_Install.png)
 
 ### ・ダウンロードした.zipファイルからインストールする場合
 
 1. 解凍した.zipファイルの中のPortableFirealarmSystem.unitypackageファイルを
 `.unitypackage` を `Assets` フォルダへドラッグ＆ドロップしてください。
+　Import確認画面が出ますので、Importを選択してください。
+![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/UnityPackage_Install_1.png)
+![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/UnityPackage_Install_2.png)
 
 2. `PortableFirealarmSystem.prefab` `(QUEST版は PortableFirealarmSystem_QUEST.prefab)` をアバターの直下にドラッグアンドドロップしてください。
-
+![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/UnityPackage_Install_3.png)
 ---
 
 ## 🧩位置の調整方法
 Modular Avatarを使用していますので首のボーンに自動的に配置されますが、ズレがある場合は以下の方法で位置調整を行ってください。
 
 1. `MA_BoneProxy_Neck` のPositionでベルトの位置を、Scaleでサイズを調整してください。
+![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/Modify_Position.png)
 
 2. `PB_COL_FAS_Belt` はベルトが身体を貫通しないようにするコライダーです。この位置を身体に沿わせるようにPosition、Rotation、Sizeを調整してください。
-
----
+![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/Modify_Colider_Position.png)
 
 ## 🧪 Quest向け注意点
 
 - Multiply Shader が透明にならない、もしくは表示に不具合のある場合は、以下の手順で透過なしのマテリアルに変更してください。
+ ![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/QUEST_Change_Shader.png)
 - 導入するアバターが既にPhysBoneリソースを多く使用している場合、アップロードできない場合がありますので、不要なボーン等を削除してください。
 
 ---
@@ -99,6 +104,7 @@ Modular Avatarを使用していますので首のボーンに自動的に配置
 
 ### ラジアルメニュー操作（PC/VR）
 
+![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/RadialMenu.png)
 | ボタン名 | 機能 |
 |----------|------|
 | On | 報知器本体を表示します。 |
@@ -125,7 +131,7 @@ Modular Avatarを使用していますので首のボーンに自動的に配置
 
 -  `Sound/Voice` フォルダに複数の警報音・音声バリエーションが含まれています。
 - `FAS_Sound` や `FAS_Voice` の `AudioClip` を差し替えて使用してください。
-
+![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/Change_Sound_Voice.png)
 ---
 ## 🔁 アップデート
 

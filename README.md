@@ -7,7 +7,6 @@
 VRChatで使えるギミック「携帯型火災報知器」のVPMパッケージです。
 
 このギミックは、首にかけて携帯できる火災報知器です。ボタンなどの各種ギミック・エフェクトを搭載しています。
-Boothで購入・ダウンロードされた方は、このリポジトリを通じてVPM経由の導入・更新が可能です。
 
 ---
 
@@ -25,66 +24,115 @@ Boothで購入・ダウンロードされた方は、このリポジトリを通
 - PC版は音が出せますが、誤解のないよう公序良俗に反しない範囲で適切にご使用ください(使用に関しての一切の責任は負えませんのでご了承ください)。
 
 ---
+## 📐 使用リソース (PC/Quest)
+
+| Item | Value |
+|------|-------|
+| Polygon Count | 2284 |
+| Skinned Meshes | 1 |
+| Materials | 2 |
+| Textures | 2 |
+| Bones | 8 |
+| PhysBones | 1 |
+| PhysBone Colliders | 1 |
+| Contact Receivers | 2 |
+| Audio Sources | 2 (PC only) |
+
+---
+
+## 📦 同梱内容
+
+| ファイル名 | 説明 |
+|------------|------|
+| `PortableFireAlartSystem.zip` | 一式圧縮ファイルです。 |
+| `PortableFireAlartSystem.unitypackage` | 本体のUnityパッケージです。 |
+| `PortableFireAlartSystem.prefab` | PC向けPrefab（音声あり）です。 |
+| `PortableFireAlartSystem_Quest.prefab` | Quest向けPrefab（音声なし）です。 |
+| `readme.txt` | この説明書です。 |
+
+---
+
+## 🛠 対応環境
+
+- Unity：2022.3.22f1 を使用しています。
+- Shader：Standard Lite / Multiply（SDK標準）です。
+- 必須アセット：
+  - Modular Avatar v1.13.0 以上が必要です。
+  - AtlasTexture v1.8.12 以上が必要です。
+
+---
 
 ## 🧩 インストール方法  
 
-### ✅ 方法①：VCC（VRChat Creator Companion）を使用する  
+### ・VPMリポジトリからインストールする場合
 
-1. VCCを開き、Settingsを選択
+1.[このリンク](https://github.com/emuoh/vpm-repos/blob/main/README.md)のインストール方法からパッケージをインストールしてください。
 
-2. Packagesを選択し「+ Add Repository」から以下のURLを追加：  
+2./packages/com.emuoh.portablefirealarmsystem/Runtime にある
+PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab)  をHierarchyのアバター直下にドラッグアンドドロップしてください。
 
-```
-https://emuoh.github.io/portablfirealarmsystem/vpm.json
-```
+### ・ダウンロードした.zipファイルからインストールする場合
 
-3. VCCの起動時の画面からインストールしたいプロジェクトのManage Projectを選択
+1. 解凍した.zipファイルの中のPortableFirealarmSystem.unitypackageファイルを
+`.unitypackage` を `Assets` フォルダへドラッグ＆ドロップしてください。
 
-4. 「Add Package (VPM)」ボタンをクリック  
-
-5. 「Selected Repos」からemuohで検索、インストールしたいパッケージ右側にある「(+) (Add Package)」を選択すると、パッケージがインストールされる
-
+2. `PortableFirealarmSystem.prefab` `(QUEST版は PortableFirealarmSystem_QUEST.prefab)` をアバターの直下にドラッグアンドドロップしてください。
 
 ---
 
-### ✅ 方法②：ALCOM を使用する  
+## 🧩位置の調整方法
 
-1. ALCOM開き、「パッケージ＆テンプレート」を選択
-   
-2. 「リポジトリを追加」を選択
-   
-3. 以下のURLを追加:
+1. `MA_BoneProxy_Neck` の位置とサイズを首に合うよう調整してください。
 
-```
-https://emuoh.github.io/vpm-repos/vpm.json
-```
+2. `PB_COL_FAS_Belt` の位置も身体に沿わせるように調整してください。
 
-4. インストールしたいパッケージを選択して「Add」をクリック 
+---
 
-5. ALCOMの起動時の画面からインストールしたいプロジェクトの「管理」を選択する
+## 🧪 Quest向け注意点
 
-6. 「パッケージ管理」の検索バーから"emuoh"で検索してインストールしたいパッケージにチェックを入れる
+- Multiply Shader が透明にならない場合は、透過なしマテリアルに変更してください。
+- PhysBoneが多すぎるとアップロードできない場合がありますので、ご注意ください。
 
-7. 「選択した物をインストール」を選択すると、パッケージがインストールされる
-
+---
 
 ## 🎮 操作方法
-[このリンク](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Docs/Manual_PortableFireAlertSystem.md)から参照してください。
 
+### メニュー操作（PC/VR）
 
-[English Manual Here.](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/EN_Manual_PortableFireAlertSystem.md)
+| ボタン名 | 機能 |
+|----------|------|
+| On | 警報器を表示します。 |
+| Button On | 非常ボタンのON/OFFを切り替えます。 |
+| Alarm Stop | 停止ボタンで警報を停止します。 |
+| Cover Open | 停止ボタンカバーの開閉を行います。 |
+| Onomatopeia On | 吹き出し文字のON/OFFを切り替えます。 |
+| Sound On | 警報音のON/OFFを切り替えます（PCのみ）。 |
+| Voice On | 音声のON/OFFを切り替えます（デフォルトはOFFです）。 |
+| Body Size | 本体のサイズを調整します。 |
+| Belt Spread | 首との開きを調整します。 |
+| Belt Width | ベルトの幅を調整します。 |
 
+### 手動操作（VR）
 
-## 🔁 アップデート
-
-- VCCの「Updates」タブからワンクリックで更新可能です
-- ALCOM経由で追加した場合も同様に自動検出されます
+1. 人差し指で非常ボタンを押すと、警報がONになります。
+2. カバーに触れると、開きます。
+3. 停止ボタンを押すと、警報がOFFになります。
+4. 再度カバーを触ると、閉じます。
 
 ---
 
-## 📜 ライセンス（VN3ライセンス）
+## 🎁 おまけ音声
 
- [LICENSE.md](https://github.com/emuoh/vpm-repos/blob/main/LICENSE.md) を参照してください。
+- フォルダ内 `Sound/Voice` に複数の音声バリエーションが含まれています。
+- `FAS_Sound` や `FAS_Voice` の `AudioClip` を差し替えて使用することができます。
+## 🔁 アップデート
+
+---
+
+- VPMパッケージからインストールした場合はVCCの「Updates」タブからワンクリックで更新可能です
+- ALCOM経由で追加した場合も同様に自動検出されます
+
+- .zipファイルからインストールした場合はダウンロードしたサイト(Booth等)から最新版をダウンロードしてインストールし直してください。
 
 ---
 
@@ -96,13 +144,21 @@ https://emuoh.github.io/vpm-repos/vpm.json
 
 ---
 
+## 📜 ライセンス
+
+このギミックは [VN3ライセンス](https://vn3.dev) に準拠しています。  
+詳しくは  [LICENSE.md](https://github.com/emuoh/vpm-repos/blob/main/LICENSE.md) を参照してください。
+
 ## 🧷 クレジット
 
 - Unity 2022.3
 - VRCSDK3
 - 使用素材
- 効果音提供　オトロジック(https://otologic.jp)
-VOICEVOX:四国めたん
-VOICEVOX:ずんだもん
-VOICEVOX:青山龍星
+
+## 🔈 使用素材
+
+- 効果音： [オトロジック](https://otologic.jp) 様
+- 音声合成： VOICEVOX（四国めたん、ずんだもん、青山龍星）様を使用しています。
+
+---
 

@@ -1,99 +1,106 @@
+﻿
+# 🔥 Portable Fire Alert System - User Manual
 
-# VRChat Gimmick Package - Portable Fire Alarm
-
-This is a VPM package for the "Portable Fire Alarm" gimmick usable in VRChat.
-
-This gimmick is a neck-worn portable fire alarm equipped with various gimmicks and effects such as buttons.
-
-If you purchased or downloaded it from Booth, you can install and update it via VPM using this repository.
+This is a neck-worn portable fire alarm gimmick.  
+It can be integrated into a VRChat avatar and supports both PC and Quest platforms, including PhysBone compatibility.
 
 ---
 
-## 🔧 Overview
+## 📦 Included Files
 
-- A wearable fire alarm that can be hung around the neck.
-- Pressing it when something is burning or about to catch fire can alert others and help prevent spreading.
-- Pressing the alarm button triggers sound and visual onomatopoeia (Quest version displays text only).
-- Opening the cover and pressing the stop button silences the alarm.
-- While active, the internal LED in the button blinks.
-- All functions including toggles and size adjustment can be operated from the menu even on desktop.
-- Using PhysBone, it can be handheld, pressed by others, or gently worn around your neck (fit may vary).
-- Designed to be lightweight and easy on avatars.
-- Includes both PC and Quest (Pico/smartphone) versions.
-- The PC version can play sounds. Please use responsibly and avoid violating public standards. The author is not responsible for any misuse.
+| File Name | Description |
+|-----------|-------------|
+| `PortableFireAlartSystem.zip` | Complete compressed archive |
+| `PortableFireAlartSystem.unitypackage` | Unity package containing the system |
+| `PortableFireAlartSystem.prefab` | Prefab for PC (with audio) |
+| `PortableFireAlartSystem_Quest.prefab` | Prefab for Quest (no audio) |
+| `readme.txt` | This manual |
 
 ---
 
-## 📦 Installation
+## 🛠 Supported Environment
 
-### ✅ Method 1: Use VCC (VRChat Creator Companion)
-
-1. Open VCC and select your project.
-2. Click "Add Package (VPM)".
-3. Click "+ Add Repository" and enter the following URL:
-
-```
-https://com.enuoh.portablefirealarmsystem/vpm.json
-```
-
-4. Search for `ExampleGimmick` from the package list and click "Add".
+- Unity: 2022.3.22f1
+- Shader: Standard Lite / Multiply (SDK default)
+- Required assets:
+  - Modular Avatar v1.13.0 or higher
+  - AtlasTexture v1.8.12 or higher
 
 ---
 
-### ✅ Method 2: Use ALCOM
+## 📐 Resource Usage (PC/Quest)
 
-1. Open the [official ALCOM site](https://vpm.alcom.dev/).
-2. Search for "ExampleGimmick" in the search box.
-3. Click "Install in VCC" and it will be added automatically in VCC.
-
-> ALCOM is a web service for browsing and adding VPM repositories easily.
-
----
-
-## 🎮 How to Operate
-
-Please refer to [this link](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Docs/Manual_PortableFireAlertSystem.md).
-
----
-
-## 🔁 Updates
-
-- You can update with one click via the "Updates" tab in VCC.
-- Updates will also be automatically detected if installed via ALCOM.
+| Item | Value |
+|------|-------|
+| Polygon Count | 2284 |
+| Skinned Meshes | 1 |
+| Materials | 2 |
+| Textures | 2 |
+| Bones | 8 |
+| PhysBones | 1 |
+| PhysBone Colliders | 1 |
+| Contact Receivers | 2 |
+| Audio Sources | 2 (PC only) |
 
 ---
 
-## 📜 License (VN3 License)
+## 🧩 Installation
 
-This package is licensed under the [VN3 License](https://vn3.dev/).
-
-### User Rights
-
-- Modification, redistribution, and commercial use are allowed.
-- Credit attribution is not required.
-
-### Prohibited Acts
-
-- Use violating laws or public order.
-- False claims of authorship or misrepresentation.
-- Infringing on the rights of others.
-
-See [LICENSE.md](./LICENSE.md) for details.
+1. Drag and drop the `.unitypackage` into your `Assets` folder.
+2. Place the `Prefab` directly under your avatar (use `_Quest` version for Quest).
+3. Adjust the position and size of `MA_BoneProxy_Neck` to fit around the neck.
+4. Adjust the position of `PB_COL_FAS_Belt` to fit the body.
 
 ---
 
-## 👤 Author & Contact
+## 🧪 Notes for Quest
 
-- Created by: emuoh ([https://emuoh3.booth.pm/](https://emuoh3.booth.pm/))
-- GitHub: [emuoh/PortablFireAlarmSystem](https://github.com/emuoh/PortablFireAlarmSystem)
-- X: emuoh3@x.com
+- If Multiply Shader does not render transparency, switch to a non-transparent material.
+- Upload may fail if too many PhysBones are in use. Please be cautious.
 
 ---
 
-## 🧷 Credits
+## 🎮 Operation Guide
 
-- Unity 2022.3
-- VRCSDK3
-- Assets Used:  
-  Sound effects: Otologic (https://otologic.jp)  
-  VOICEVOX: Shikoku Metan, Zundamon, Ryusei Aoyama
+### Menu Operations (PC/VR)
+
+| Button Name | Function |
+|-------------|----------|
+| On | Shows the alarm system |
+| Button On | Toggles the emergency button ON/OFF |
+| Alarm Stop | Stops the alarm using the stop button |
+| Cover Open | Opens/closes the stop button cover |
+| Onomatopeia On | Toggles the speech bubble ON/OFF |
+| Sound On | Toggles alarm sound ON/OFF (PC only) |
+| Voice On | Toggles voice ON/OFF (default OFF) |
+| Body Size | Adjusts the device size |
+| Belt Spread | Adjusts distance from neck |
+| Belt Width | Adjusts belt width |
+
+### Manual Operations (VR)
+
+1. Press the emergency button with your index finger to activate the alarm.
+2. Touch the cover to open it.
+3. Press the stop button to deactivate the alarm.
+4. Touch the cover again to close it.
+
+---
+
+## 🎁 Bonus Voice Clips
+
+- Several voice variations are included in the `Sound/Voice` folder.
+- You can replace the `AudioClip` in `FAS_Sound` or `FAS_Voice` to use them.
+
+---
+
+## 🔈 Materials Used
+
+- Sound effects: [Otologic](https://otologic.jp)
+- Voice synthesis: VOICEVOX (Shikoku Metan, Zundamon, Ryusei Aoyama)
+
+---
+
+## 📜 License
+
+This gimmick follows the [VN3 License](https://vn3.dev).  
+Please refer to `LICENSE.md` for more information.

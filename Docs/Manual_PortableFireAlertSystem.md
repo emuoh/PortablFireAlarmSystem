@@ -1,7 +1,7 @@
 
-# 🔥 Portable Fire Alert System - 使用説明書
+# 🔥 Portable Fire Alert System - 操作説明書
 
-首にかけて携帯できる、軽量な火災報知器ギミックです。  
+首にかけて携帯できる、火災報知器ギミックです。  
 VRChatアバターに組み込むことができ、PCとQuestの両方に対応しており、PhysBoneにも対応しています。
 
 ---
@@ -18,15 +18,6 @@ VRChatアバターに組み込むことができ、PCとQuestの両方に対応�
 
 ---
 
-## 💡 概要
-
-- 音と吹き出し文字で警報を出します（PC）。吹き出し文字のみ（Quest）にも対応しています。
-- ボタンとカバーによる停止動作があります。
-- LED点滅、軽量構造で、PhysBoneによる自然な装着感があります。
-- メニュー操作と手動操作の2方式に対応しており、デスクトップ・VRの両方で利用可能です。
-
----
-
 ## 🛠 対応環境
 
 - Unity：2022.3.22f1 を使用しています。
@@ -34,22 +25,6 @@ VRChatアバターに組み込むことができ、PCとQuestの両方に対応�
 - 必須アセット：
   - Modular Avatar v1.13.0 以上が必要です。
   - AtlasTexture v1.8.12 以上が必要です。
-
----
-
-## 📐 スペック（PC/Quest）
-
-| 項目 | 値 |
-|------|----|
-| Polygon Count | 2284 |
-| Skinned Meshes | 1 |
-| Materials | 2 |
-| Textures | 2 |
-| Bones | 8 |
-| PhysBones | 1 |
-| Physbone Colliders | 1 |
-| Contact | 2 |
-| Audio Source | 2（※PCのみ） |
 
 ---
 

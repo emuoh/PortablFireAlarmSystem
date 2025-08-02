@@ -1,14 +1,10 @@
-
-
 # VRChatギミックパッケージ - 携帯型火災報知器
 
-[English Ovewview Here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/EN_README.md)
-
+[English README Here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/EN_README.md)
 
 VRChatで使えるギミック「携帯型火災報知器」のVPMパッケージです。
 
-このギミックは、首にかけて携帯できる火災報知器です。ボタンなどの各種ギミック・エフェクトを搭載しています。
-Boothで購入・ダウンロードされた方は、このリポジトリを通じてVPM経由の導入・更新が可能です。
+このギミックは、アバターの首にかけて携帯できる火災報知器です。ボタンなどの各種ギミック・エフェクトを搭載しています。
 
 ---
 
@@ -26,7 +22,7 @@ Boothで購入・ダウンロードされた方は、このリポジトリを通
 - PC版は音が出せますが、誤解のないよう公序良俗に反しない範囲で適切にご使用ください(使用に関しての一切の責任は負えませんのでご了承ください)。
 
 ---
-## 📐 使用リソース (PC/Quest)
+## 📐 使用リソース (PC/Quest 共通)
 
 | Item | Value |
 |------|-------|
@@ -35,8 +31,10 @@ Boothで購入・ダウンロードされた方は、このリポジトリを通
 | Materials | 2 |
 | Textures | 2 |
 | Bones | 8 |
-| PhysBones | 1 |
-| PhysBone Colliders | 1 |
+| Physbone Tansform | 8 |
+| Physbone Collision Check Count | 7 |
+| Physbone Components | 1 |
+| Physbone Colliders | 1 |
 | Contact Receivers | 2 |
 | Audio Sources | 2 (PC only) |
 
@@ -46,31 +44,30 @@ Boothで購入・ダウンロードされた方は、このリポジトリを通
 
 | ファイル名 | 説明 |
 |------------|------|
-| `PortableFireAlartSystem.zip` | 一式圧縮ファイルです。 |
-| `PortableFireAlartSystem.unitypackage` | 本体のUnityパッケージです。 |
-| `PortableFireAlartSystem.prefab` | PC向けPrefab（音声あり）です。 |
-| `PortableFireAlartSystem_Quest.prefab` | Quest向けPrefab（音声なし）です。 |
-| `readme.txt` | この説明書です。 |
+| `PortableFireAlarmSystem.zip` | 一式圧縮ファイルです。 |
+| `PortableFireAlarmSystem.unitypackage` | 本体のUnityパッケージです。 |
+| `PortableFireAlarmSystem.prefab` | PC向けPrefab（音声あり）です。 |
+| `PortableFireAlarmSystem_Quest.prefab` | Quest向けPrefab（音声なし）です。 |
+| `readme.md` | この説明書です。 |
 
 ---
 
 ## 🛠 対応環境
 
-- Unity：2022.3.22f1 を使用しています。
+- Unity：2022.3.22f1 を使用します。
 - Shader：Standard Lite / Multiply（SDK標準）です。
 - 必須アセット：
   - Modular Avatar v1.13.0 以上が必要です。
-  - AtlasTexture v1.8.12 以上が必要です。
-
+  - AtlasTexture v.0.10.10 以上が必要です。
+  - Avatar Optimizer v1.8.12 以上が必要です。
 ---
 
 ## 🧩 インストール方法  
 
 ### ・VPMリポジトリからインストールする場合
 
-1.[このリンク](https://github.com/emuoh/vpm-repos/blob/main/README.md)のインストール方法からパッケージをインストールしてください。
-
-2./packages/com.emuoh.portablefirealarmsystem/Runtime にある
+ 1. [このリンク](https://github.com/emuoh/vpm-repos/blob/main/README.md)のインストール方法からパッケージをインストールしてください。
+ 2.  /packages/com.emuoh.portablefirealarmsystem/Runtime にある
 PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab)  をHierarchyのアバター直下にドラッグアンドドロップしてください。
 
 ### ・ダウンロードした.zipファイルからインストールする場合
@@ -83,23 +80,24 @@ PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab
 ---
 
 ## 🧩位置の調整方法
+Modular Avatarを使用していますので首のボーンに自動的に配置されますが、ズレがある場合は以下の方法で位置調整を行ってください。
 
-1. `MA_BoneProxy_Neck` の位置とサイズを首に合うよう調整してください。
+1. `MA_BoneProxy_Neck` のPositionでベルトの位置を、Scaleでサイズを調整してください。
 
-2. `PB_COL_FAS_Belt` の位置も身体に沿わせるように調整してください。
+2. `PB_COL_FAS_Belt` はベルトが身体を貫通しないようにするコライダーです。この位置を身体に沿わせるように調整してください。
 
 ---
 
 ## 🧪 Quest向け注意点
 
-- Multiply Shader が透明にならない場合は、透過なしマテリアルに変更してください。
-- PhysBoneが多すぎるとアップロードできない場合がありますので、ご注意ください。
+- Multiply Shader が透明にならない場合は、以下の手順で透過なしのマテリアルに変更してください。
+- 導入するアバターが既にPhysBoneリソースを多く使用している場合、アップロードできない場合がありますので、不要なボーン等を削除してください。
 
 ---
 
 ## 🎮 操作方法
 
-### メニュー操作（PC/VR）
+### ラジアルメニュー操作（PC/VR）
 
 | ボタン名 | 機能 |
 |----------|------|
@@ -109,7 +107,7 @@ PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab
 | Cover Open | 停止ボタンカバーの開閉を行います。 |
 | Onomatopeia On | 吹き出し文字のON/OFFを切り替えます。 |
 | Sound On | 警報音のON/OFFを切り替えます（PCのみ）。 |
-| Voice On | 音声のON/OFFを切り替えます（デフォルトはOFFです）。 |
+| Voice On | 音声のON/OFFを切り替えます（PCのみ。デフォルトはOFFです）。 |
 | Body Size | 本体のサイズを調整します。 |
 | Belt Spread | 首との開きを調整します。 |
 | Belt Width | ベルトの幅を調整します。 |
@@ -125,16 +123,18 @@ PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab
 
 ## 🎁 おまけ音声
 
-- フォルダ内 `Sound/Voice` に複数の音声バリエーションが含まれています。
-- `FAS_Sound` や `FAS_Voice` の `AudioClip` を差し替えて使用することができます。
-## 🔁 アップデート
+-  `Sound/Voice` フォルダに複数の警報音・音声バリエーションが含まれています。
+- `FAS_Sound` や `FAS_Voice` の `AudioClip` を差し替えて使用してください。
 
 ---
+## 🔁 アップデート
 
-- VPMパッケージからインストールした場合はVCCの「Updates」タブからワンクリックで更新可能です
-- ALCOM経由で追加した場合も同様に自動検出されます
+- VPMパッケージからインストールした場合は、最新版が配布されると自動で通知されます。
+- VCCからはアップデートしたいのプロジェクトの「Manage Project」から最新の「LatestVersion」を選択することで更新可能です。
 
-- .zipファイルからインストールした場合はダウンロードしたサイト(Booth等)から最新版をダウンロードしてインストールし直してください。
+- ALCOMからはアップデートしたいプロジェクトの「管理」から「最新のバージョン」を選択することで更新可能です。
+
+- .zipファイルからインストールした場合は、ダウンロードしたサイト(Booth等)から最新版をダウンロードして再インストールしてください(詳細な手順はサイト上の説明もしくは.zipファイル内をご参照ください)。
 
 ---
 
@@ -155,7 +155,6 @@ PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab
 
 - Unity 2022.3
 - VRCSDK3
-- 使用素材
 
 ## 🔈 使用素材
 

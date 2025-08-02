@@ -102,10 +102,10 @@ Import確認画面が出ますので、Importを選択してください。
 Modular Avatarを使用していますので首のボーンに自動的に配置されますが、ズレがある場合は以下の方法で位置調整を行ってください。
 
 1. `MA_BoneProxy_Neck` を選択後、矢印をドラッグしてベルトの位置を調整してください。
-ベルトの横の開き幅の調整はラジアルメニューから行いますのでここでは調整不要です。
+   #### ベルトの横の開き幅の調整はラジアルメニューから行いますのでここでは調整不要です。
 ![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/Modify_Position.png)
 
-2. `PB_COL_FAS_Belt` はベルトが身体を貫通しないようにするコライダーです。この位置を1.と同様に操作して、身体に沿わせるように調整してください。
+3. `PB_COL_FAS_Belt` はベルトが身体を貫通しないようにするコライダーです。この位置を1.と同様に操作して、身体に沿わせるように調整してください。
 ![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/Modify_Colider_Position.png)
 
 ## 🧪 Quest向け注意点

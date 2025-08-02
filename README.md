@@ -69,8 +69,7 @@ VRChatで使えるギミック「携帯型火災報知器」のVPMパッケー�
  1. [このリンク](https://github.com/emuoh/vpm-repos/blob/main/README.md)のインストール方法からパッケージをインストールしてください。
  2.  /packages/com.emuoh.portablefirealarmsystem/Runtime にある
 PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab)  をHierarchyのアバター直下にドラッグアンドドロップしてください。
-![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/VPM_Package_Install.png)
-
+[PortablFireAlarmSystem/Install_Picture/VPM_Package_Install.png at main · emuoh/PortablFireAlarmSystem](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/VPM_Package_Install.png)
 ### ・ダウンロードした.zipファイルからインストールする場合
 
 1. 解凍した.zipファイルの中のPortableFirealarmSystem.unitypackageファイルを

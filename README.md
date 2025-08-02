@@ -54,12 +54,12 @@ VRChatで使えるギミック「携帯型火災報知器」のVPMパッケー�
 
 ## 🛠 対応環境
 
-- Unity：2022.3.22f1 を使用します。
-- Shader：Standard Lite / Multiply（SDK標準）です。
+- Unity：2022.3.22f1。
+- Shader：Standard Lite / Multiply（SDK標準）
 - 必須アセット：
-  - Modular Avatar v1.13.0 以上が必要です。
-  - AtlasTexture v.0.10.10 以上が必要です。
-  - Avatar Optimizer v1.8.12 以上が必要です。
+  - Modular Avatar v1.13.0 以上
+  - AtlasTexture v.0.10.10 以上
+  - Avatar Optimizer v1.8.12 以上
 ---
 
 ## 🧩 インストール方法  
@@ -84,13 +84,13 @@ Modular Avatarを使用していますので首のボーンに自動的に配置
 
 1. `MA_BoneProxy_Neck` のPositionでベルトの位置を、Scaleでサイズを調整してください。
 
-2. `PB_COL_FAS_Belt` はベルトが身体を貫通しないようにするコライダーです。この位置を身体に沿わせるように調整してください。
+2. `PB_COL_FAS_Belt` はベルトが身体を貫通しないようにするコライダーです。この位置を身体に沿わせるようにPosition、Rotation、Sizeを調整してください。
 
 ---
 
 ## 🧪 Quest向け注意点
 
-- Multiply Shader が透明にならない場合は、以下の手順で透過なしのマテリアルに変更してください。
+- Multiply Shader が透明にならない、もしくは表示に不具合のある場合は、以下の手順で透過なしのマテリアルに変更してください。
 - 導入するアバターが既にPhysBoneリソースを多く使用している場合、アップロードできない場合がありますので、不要なボーン等を削除してください。
 
 ---
@@ -101,7 +101,7 @@ Modular Avatarを使用していますので首のボーンに自動的に配置
 
 | ボタン名 | 機能 |
 |----------|------|
-| On | 警報器を表示します。 |
+| On | 報知器本体を表示します。 |
 | Button On | 非常ボタンのON/OFFを切り替えます。 |
 | Alarm Stop | 停止ボタンで警報を停止します。 |
 | Cover Open | 停止ボタンカバーの開閉を行います。 |

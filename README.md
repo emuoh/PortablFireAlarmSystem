@@ -102,6 +102,7 @@ Import確認画面が出ますので、Importを選択してください。
 Modular Avatarを使用していますので首のボーンに自動的に配置されますが、ズレがある場合は以下の方法で位置調整を行ってください。
 
 1. `MA_BoneProxy_Neck` を選択後、矢印をドラッグしてベルトの位置を調整してください。
+ベルトの横の開き幅の調整はラジアルメニューから行いますのでここでは調整不要です。
 ![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/Modify_Position.png)
 
 2. `PB_COL_FAS_Belt` はベルトが身体を貫通しないようにするコライダーです。この位置を1.と同様に操作して、身体に沿わせるように調整してください。
@@ -132,7 +133,7 @@ Modular Avatarを使用していますので首のボーンに自動的に配置
 | Sound On | 警報音のON/OFFを切り替えます（PCのみ）。 |
 | Voice On | 音声のON/OFFを切り替えます（PCのみ。デフォルトはOFFです）。 |
 | Body Size | 本体のサイズを調整します。 |
-| Belt Spread | 首との開きを調整します。 |
+| Belt Spread | ベルトの開き幅を調整します。 |
 | Belt Width | ベルトの幅を調整します。 |
 
 ### 手動操作（VR）

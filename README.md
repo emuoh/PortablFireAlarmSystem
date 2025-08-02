@@ -67,6 +67,7 @@ VRChatで使えるギミック「携帯型火災報知器」のVPMパッケー�
   - [Modular Avatar v1.13.0 以上](https://modular-avatar.nadena.dev/ja/docs/intro)
   - [AtlasTexture v.0.10.10 以上](https://ttt.rs64.net/)
   - [Avatar Optimizer v1.8.12 以上](https://vpm.anatawa12.com/avatar-optimizer/ja/)
+
 リンクは各アセットの最新のVPNリポジトリによる導入サイトになります。
 可能な限り最新のバージョンを使用してください。
 バージョンが低い環境の場合は、正常に動作しないことがあります。

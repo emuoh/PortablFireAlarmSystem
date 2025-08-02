@@ -74,8 +74,8 @@ PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab
 
 1. 解凍した.zipファイルの中のPortableFirealarmSystem.unitypackageファイルを
 `.unitypackage` を `Assets` フォルダへドラッグ＆ドロップしてください。
-　Import確認画面が出ますので、Importを選択してください。
 ![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/UnityPackage_Install_1.png)
+Import確認画面が出ますので、Importを選択してください。
 ![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/UnityPackage_Install_2.png)
 
 2. `PortableFirealarmSystem.prefab` `(QUEST版は PortableFirealarmSystem_QUEST.prefab)` をアバターの直下にドラッグアンドドロップしてください。

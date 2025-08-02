@@ -44,11 +44,17 @@ VRChatで使えるギミック「携帯型火災報知器」のVPMパッケー�
 
 | ファイル名 | 説明 |
 |------------|------|
-| `PortableFireAlarmSystem.zip` | 一式圧縮ファイルです。 |
+| `PortableFireAlarmSystem.zip` | 一式を含む圧縮ファイルです。 |
 | `PortableFireAlarmSystem.unitypackage` | 本体のUnityパッケージです。 |
 | `PortableFireAlarmSystem.prefab` | PC向けPrefab（音声あり）です。 |
 | `PortableFireAlarmSystem_Quest.prefab` | Quest向けPrefab（音声なし）です。 |
-| `readme.md` | この説明書です。 |
+| `README.md` | この説明書です。 |
+| `anim` | アニメーションファイルが入ったフォルダです。 |
+| `Controller` | アニメータが入ったフォルダです。 |
+| `fbx` | 本体のfbxファイルが入ったフォルダです。 |
+| `mat_tex` | マテリアルとテクスチャファイルが入ったフォルダです。 |
+| `Sound` | 警報音のファイルが入ったフォルダです。 |
+| `Voice` | 音声のファイルが入ったフォルダです。 |
 
 ---
 
@@ -85,10 +91,10 @@ Import確認画面が出ますので、Importを選択してください。
 ## 🧩位置の調整方法
 Modular Avatarを使用していますので首のボーンに自動的に配置されますが、ズレがある場合は以下の方法で位置調整を行ってください。
 
-1. `MA_BoneProxy_Neck` のPositionでベルトの位置を、Scaleでサイズを調整してください。
+1. `MA_BoneProxy_Neck` を選択してベルトの位置を調整してください。
 ![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/Modify_Position.png)
 
-2. `PB_COL_FAS_Belt` はベルトが身体を貫通しないようにするコライダーです。この位置を身体に沿わせるようにPosition、Rotation、Sizeを調整してください。
+2. `PB_COL_FAS_Belt` はベルトが身体を貫通しないようにするコライダーです。この位置を1.と同様に操作して、身体に沿わせるように調整してください。
 ![enter image description here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Install_Picture/Modify_Colider_Position.png)
 
 ## 🧪 Quest向け注意点

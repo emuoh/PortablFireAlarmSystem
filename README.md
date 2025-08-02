@@ -46,9 +46,9 @@ VRChatで使えるギミック「携帯型火災報知器」のVPMパッケー�
 |------------|------|
 | `PortableFireAlarmSystem.zip` | 一式を含む圧縮ファイルです。 |
 | `PortableFireAlarmSystem.unitypackage` | 本体のUnityパッケージです。 |
+| `README.md` | この説明書です。 |
 | `PortableFireAlarmSystem.prefab` | PC向けPrefab（音声あり）です。 |
 | `PortableFireAlarmSystem_Quest.prefab` | Quest向けPrefab（音声なし）です。 |
-| `README.md` | この説明書です。 |
 | `anim` | アニメーションファイルが入ったフォルダです。 |
 | `Controller` | アニメータが入ったフォルダです。 |
 | `fbx` | 本体のfbxファイルが入ったフォルダです。 |

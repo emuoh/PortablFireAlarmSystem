@@ -148,7 +148,7 @@ PortableFirealarmSystem.prefab (QUEST版は PortableFirealarmSystem_QUEST.prefab
 
 ## 📜 ライセンス
 
-このギミックは [VN3ライセンス](https://vn3.dev) に準拠しています。  
+このギミックは [VN3ライセンス](https://www.vn3.org/index) に準拠しています。  
 詳しくは  [LICENSE.md](https://github.com/emuoh/vpm-repos/blob/main/LICENSE.md) を参照してください。
 
 ## 🧷 クレジット

@@ -1,3 +1,4 @@
+
 # VRChatギミックパッケージ - 携帯型火災報知器
 
 [English Ovewview Here](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/EN_README.md)
@@ -68,10 +69,10 @@ https://emuoh.github.io/vpm-repos/vpm.json
 
 
 ## 🎮 操作方法
-[このリンク](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/README.md)から参照してください。
+[このリンク](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/Docs/Manual_PortableFireAlertSystem.md)から参照してください。
 
 
-[English Manual Here.](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/EN_README.md)
+[English Manual Here.](https://github.com/emuoh/PortablFireAlarmSystem/blob/main/EN_Manual_PortableFireAlertSystem.md)
 
 
 ## 🔁 アップデート

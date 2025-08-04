@@ -62,6 +62,7 @@ VRChatで使えるギミック「携帯型火災報知器」のVPMパッケー�
 ## 🛠 対応環境
 
 - Unity：2022.3.22f1
+- VRChat SDK - Avatars 3.7以上
 - Shader：Standard Lite / Multiply（SDK標準）
 - 必須アセット：
   - [Modular Avatar v1.13.0 以上](https://modular-avatar.nadena.dev/ja/docs/intro)
